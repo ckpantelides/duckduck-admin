@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/duckduck-admin/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/duckduck-admin/static/js/main.11e01f36.chunk.js",
+    "main.js.map": "/duckduck-admin/static/js/main.11e01f36.chunk.js.map",
+    "runtime-main.js": "/duckduck-admin/static/js/runtime-main.ade1a86c.js",
+    "runtime-main.js.map": "/duckduck-admin/static/js/runtime-main.ade1a86c.js.map",
+    "static/js/2.75737173.chunk.js": "/duckduck-admin/static/js/2.75737173.chunk.js",
+    "static/js/2.75737173.chunk.js.map": "/duckduck-admin/static/js/2.75737173.chunk.js.map",
+    "index.html": "/duckduck-admin/index.html",
+    "precache-manifest.4216ce86be25f54f8c0563fdcc7e8298.js": "/duckduck-admin/precache-manifest.4216ce86be25f54f8c0563fdcc7e8298.js",
+    "service-worker.js": "/duckduck-admin/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/duckduck-admin/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.75737173.chunk.js.LICENSE.txt": "/duckduck-admin/static/js/2.75737173.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ade1a86c.js",
+    "static/js/2.75737173.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.11e01f36.chunk.js"
+  ]
+}
