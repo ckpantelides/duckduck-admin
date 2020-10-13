@@ -20,6 +20,7 @@ export default class Login extends Component {
     event.preventDefault();
     fetch('https://storybook-backend.herokuapp.com/api/authenticate', {
       method: 'POST',
+      credentials: 'include',
       body: JSON.stringify(this.state),
       headers: {
         'Content-Type': 'application/json'
