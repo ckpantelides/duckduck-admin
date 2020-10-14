@@ -10,7 +10,10 @@ export default class Home extends Component {
   }
   componentDidMount() {
     //GET message from server using fetch api
-    fetch('https://storybook-backend.herokuapp.com/api/home')
+    fetch('https://storybook-backend.herokuapp.com/api/home', {
+      method: 'GET',
+      credentials: 'include'
+    })
       .then((res) => res.text())
       .then((res) => this.setState({ message: res }));
   }

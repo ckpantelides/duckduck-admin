@@ -2,9 +2,109 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**************** NAV *******************************/
+
+.nav ul {
+  height: 10vh;
+}
+
+.nav li {
+  display: inline;
+  padding: 0 5px;
+}
+/**************** ADMIN component *******************/
+
+#admin {
+  height: 90vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+#admin h4 {
+  font: 16px 'opensans-bold', sans-serif;
+}
+
+.enquiry-save {
+  background-color: #7de680;
+  border: none;
+}
+
+.enquiry-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.enquiry-card {
+  border: black 0.5px solid;
+  height: 270px;
+  width: 200px;
+  margin: 10px;
+  background-color: rgb(234, 178, 178);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  word-wrap: break-word;
+  overflow-y: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+.enquiry-card p {
+  margin: 0 0 2px 0;
+  padding: 0 10px;
+}
+
+.enquiry-card hr {
+  width: 180px;
+  border-color: black;
+  border-width: 0.3px;
+  margin: 3px auto;
+}
+
+.enquiry-header,
+.enquiry-footer {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.read {
+  background-color: rgb(244, 245, 171);
+}
+
+.enquiryButtonWrapper {
+  text-align: right;
+  padding: 5px 5px 0 0px;
+}
+
+.enquiryButton {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.buttonIcon {
+  height: 15px;
+  vertical-align: middle;
+}
+
+/* Typing loader */
+.typing_loader {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-animation: typing 1s linear infinite alternate;
+  -moz-animation: Typing 1s linear infinite alternate;
+  animation: typing 1s linear infinite alternate;
+  margin: 46px auto; /* Not necessary- its only for layouting*/
+  position: relative;
+  left: -12px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

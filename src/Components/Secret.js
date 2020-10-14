@@ -11,8 +11,8 @@ export default class Secret extends Component {
   componentDidMount() {
     //GET message from server using fetch api
     fetch('https://storybook-backend.herokuapp.com/api/secret', {
-      method: 'GET',
-      credentials: 'include'})
+      credentials: 'include'
+    })
       .then((res) => res.text())
       .then((res) => this.setState({ message: res }));
   }
