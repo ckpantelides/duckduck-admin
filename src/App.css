@@ -16,7 +16,7 @@ html {
 }
 /**************** ADMIN component *******************/
 
-#admin {
+#orders {
   height: 90vh;
   width: 100vw;
 }
@@ -25,7 +25,7 @@ h1 {
   font-size: 4em;
 }
 
-#admin h4 {
+#orders h4 {
   font: 16px 'opensans-bold', sans-serif;
 }
 

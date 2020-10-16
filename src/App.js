@@ -16,7 +16,7 @@ export default class App extends Component {
         <div>
           <ul className="nav">
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/duckduck-admin'>Home</Link>
             </li>
             <li>
               <Link to='/secret'>Secret</Link>
@@ -32,7 +32,7 @@ export default class App extends Component {
             </li>
           </ul>
           <Switch>
-            <Route path='/' exact component={Home} />
+            <Route path='/duckduck-admin' exact component={Home} />
             <Route path="/secret" component={withAuth(Secret)} />
             <Route path="/orders" component={withAuth(Orders)} />
             <Route path="/login" component={Login} />

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// import axios from 'axios';
 
 import React from 'react';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
@@ -9,7 +8,7 @@ import tick from './images/tick.png';
 import bin from './images/bin.png';
 import save from './images/save.png';
 
-const Admin = () => {
+const Orders = () => {
   const url = 'https://storybook-backend.herokuapp.com/orders';
   // setData will update data variable using useState
   const [data, setData] = useState([]);
@@ -133,7 +132,7 @@ const Admin = () => {
     setData(arrayMove(data, oldIndex, newIndex));
 
   return (
-    <div id='admin'>
+    <div id='orders'>
       <h1>Orders</h1>
       <h4>
         Drag orders to reorder them. Tick to mark as read. Bin to delete
@@ -158,4 +157,4 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default Orders;
