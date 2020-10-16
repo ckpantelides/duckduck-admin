@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/duckduck-admin/precache-manifest.c97dfa2533c4150e02c612aed19fc697.js"
+  "/duckduck-admin/precache-manifest.ead652e58a99189fe0906c20fa7eea7c.js"
 );
 
 self.addEventListener('message', (event) => {

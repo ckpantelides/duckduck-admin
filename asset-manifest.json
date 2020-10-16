@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/duckduck-admin/static/css/main.b5905faa.chunk.css",
-    "main.js": "/duckduck-admin/static/js/main.50ea11a4.chunk.js",
-    "main.js.map": "/duckduck-admin/static/js/main.50ea11a4.chunk.js.map",
+    "main.css": "/duckduck-admin/static/css/main.258c97d2.chunk.css",
+    "main.js": "/duckduck-admin/static/js/main.7ac401c1.chunk.js",
+    "main.js.map": "/duckduck-admin/static/js/main.7ac401c1.chunk.js.map",
     "runtime-main.js": "/duckduck-admin/static/js/runtime-main.ade1a86c.js",
     "runtime-main.js.map": "/duckduck-admin/static/js/runtime-main.ade1a86c.js.map",
     "static/js/2.b30baf7e.chunk.js": "/duckduck-admin/static/js/2.b30baf7e.chunk.js",
     "static/js/2.b30baf7e.chunk.js.map": "/duckduck-admin/static/js/2.b30baf7e.chunk.js.map",
     "index.html": "/duckduck-admin/index.html",
-    "precache-manifest.c97dfa2533c4150e02c612aed19fc697.js": "/duckduck-admin/precache-manifest.c97dfa2533c4150e02c612aed19fc697.js",
+    "precache-manifest.ead652e58a99189fe0906c20fa7eea7c.js": "/duckduck-admin/precache-manifest.ead652e58a99189fe0906c20fa7eea7c.js",
     "service-worker.js": "/duckduck-admin/service-worker.js",
-    "static/css/main.b5905faa.chunk.css.map": "/duckduck-admin/static/css/main.b5905faa.chunk.css.map",
+    "static/css/main.258c97d2.chunk.css.map": "/duckduck-admin/static/css/main.258c97d2.chunk.css.map",
     "static/js/2.b30baf7e.chunk.js.LICENSE.txt": "/duckduck-admin/static/js/2.b30baf7e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ade1a86c.js",
     "static/js/2.b30baf7e.chunk.js",
-    "static/css/main.b5905faa.chunk.css",
-    "static/js/main.50ea11a4.chunk.js"
+    "static/css/main.258c97d2.chunk.css",
+    "static/js/main.7ac401c1.chunk.js"
   ]
 }

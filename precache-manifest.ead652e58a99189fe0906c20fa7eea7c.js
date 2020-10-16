@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17b81cda760610b286066b90b2737e3b",
+    "revision": "7ed1fe6c9216da58e402d67f1cea0ffe",
     "url": "/duckduck-admin/index.html"
   },
   {
-    "revision": "1cab9165620b3394b3eb",
-    "url": "/duckduck-admin/static/css/main.b5905faa.chunk.css"
+    "revision": "b46a4533b81395c5bb69",
+    "url": "/duckduck-admin/static/css/main.258c97d2.chunk.css"
   },
   {
     "revision": "7408759228665b69cb2c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/duckduck-admin/static/js/2.b30baf7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1cab9165620b3394b3eb",
-    "url": "/duckduck-admin/static/js/main.50ea11a4.chunk.js"
+    "revision": "b46a4533b81395c5bb69",
+    "url": "/duckduck-admin/static/js/main.7ac401c1.chunk.js"
   },
   {
     "revision": "ca4cb14d0186b58c8f38",
