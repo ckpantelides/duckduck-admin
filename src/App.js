@@ -4,9 +4,10 @@ import Home from './Components/Home';
 import Secret from './Components/Secret';
 import Login from './Components/Login';
 import withAuth from './Components/withAuth';
-import Admin from './Components/Admin';
-import './App.css';
+import Orders from './Components/Orders';
+import Logout from './Components/Logout';
 
+import './App.css';
 
 export default class App extends Component {
   render() {
@@ -24,14 +25,18 @@ export default class App extends Component {
               <Link to='/login'>Login</Link>
             </li>
             <li>
-              <Link to='/admin'>Admin</Link>
+              <Link to='/orders'>Orders</Link>
+            </li>
+            <li>
+              <Link to='/logout'>Logout</Link>
             </li>
           </ul>
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path="/secret" component={withAuth(Secret)} />
-            <Route path="/admin" component={withAuth(Admin)} />
+            <Route path="/orders" component={withAuth(Orders)} />
             <Route path="/login" component={Login} />
+            <Route path="/logout" component={Logout} />
           </Switch>
         </div>
       </Router>

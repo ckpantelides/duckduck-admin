@@ -28,7 +28,7 @@ export default class Login extends Component {
     })
     .then(res => {
       if (res.status === 200) {
-        this.props.history.push('/secret');
+        this.props.history.push('/orders');
       } else {
         const error = new Error(res.error);
         throw error;
