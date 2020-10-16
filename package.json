@@ -1,6 +1,5 @@
 {
   "name": "duckduck-admin",
-  "homepage": "https://ckpantelides.github.io/duckduck-admin/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

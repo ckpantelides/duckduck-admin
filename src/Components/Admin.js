@@ -88,13 +88,24 @@ const Admin = () => {
           </button>
         </div>
         <p className='enquiry-header'>Order date: {value.date}</p>
+        <p className='enquiry-header'>Order ID: {value.orderid}</p>
         <hr></hr>
-        <p>{value.delName}</p>
-        <p>{value.email}</p>
+        <p className='enquiry-footer'>Delivery:</p>
+        <p>{value.delname}</p>
         <p>{value.address}</p>
+        <p>{value.postcode}</p>
+        <p>{value.email}</p>
         <hr></hr>
         <p className='enquiry-footer'>Story:</p>
         <p>{value.story}</p>
+        <p>{value.type}</p>
+        <p>{value.charname}</p>
+        <p>{value.avatar}</p>
+        <hr></hr>
+        <p className='enquiry-footer'>Payment:</p>
+        <p>Paid: {value.paid}</p>
+        <p>{value.paymentintentid}</p>
+        <p> Card: {value.brand} {value.last4}</p>
       </div>
     )
   );
