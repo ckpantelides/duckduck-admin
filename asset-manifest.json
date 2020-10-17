@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/duckduck-admin/static/css/main.ce8bf1cc.chunk.css",
-    "main.js": "/duckduck-admin/static/js/main.58e8c067.chunk.js",
-    "main.js.map": "/duckduck-admin/static/js/main.58e8c067.chunk.js.map",
+    "main.js": "/duckduck-admin/static/js/main.ecc369f2.chunk.js",
+    "main.js.map": "/duckduck-admin/static/js/main.ecc369f2.chunk.js.map",
     "runtime-main.js": "/duckduck-admin/static/js/runtime-main.ade1a86c.js",
     "runtime-main.js.map": "/duckduck-admin/static/js/runtime-main.ade1a86c.js.map",
     "static/js/2.3e92fce3.chunk.js": "/duckduck-admin/static/js/2.3e92fce3.chunk.js",
     "static/js/2.3e92fce3.chunk.js.map": "/duckduck-admin/static/js/2.3e92fce3.chunk.js.map",
     "index.html": "/duckduck-admin/index.html",
-    "precache-manifest.83501c5fb3bc098242c1136d95ae6d1d.js": "/duckduck-admin/precache-manifest.83501c5fb3bc098242c1136d95ae6d1d.js",
+    "precache-manifest.8aee55e868f96dfd395ed8230184e42e.js": "/duckduck-admin/precache-manifest.8aee55e868f96dfd395ed8230184e42e.js",
     "service-worker.js": "/duckduck-admin/service-worker.js",
     "static/css/main.ce8bf1cc.chunk.css.map": "/duckduck-admin/static/css/main.ce8bf1cc.chunk.css.map",
     "static/js/2.3e92fce3.chunk.js.LICENSE.txt": "/duckduck-admin/static/js/2.3e92fce3.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ade1a86c.js",
     "static/js/2.3e92fce3.chunk.js",
     "static/css/main.ce8bf1cc.chunk.css",
-    "static/js/main.58e8c067.chunk.js"
+    "static/js/main.ecc369f2.chunk.js"
   ]
 }
