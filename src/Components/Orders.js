@@ -53,10 +53,10 @@ const Orders = () => {
 
   // function to send any changes to the enquiries to the backend
   function saveChanges() {
-    fetch('https://storybook-backend.herokuapp.com/updateOrders', {
+    fetch('https://storybook-backend.herokuapp.com/update', {
         method: 'POST',
         credentials: 'include',
-        mode:'no-cors',
+        mode:'cors',
         body:  JSON.stringify(data),
         headers: {
           'Content-Type': 'application/json'
