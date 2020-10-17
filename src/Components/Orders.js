@@ -31,7 +31,6 @@ const Orders = () => {
         setIsLoading(false);
       });  
   }, []);
-//}, [data]);
 
   // function to mark enquiries as "read". All enquiries are initially set as read:"false".
   // This function creates a copy of the data retrieved from the database. When the rowid matches
@@ -54,14 +53,23 @@ const Orders = () => {
 
   // function to send any changes to the enquiries to the backend
   function saveChanges() {
-    fetch(`https://storybook-backend.herokuapp.com/update-orders`, {
+    fetch('https://storybook-backend.herokuapp.com/updateOrders', {
         method: 'POST',
         credentials: 'include',
-        body: data,
+        mode:'no-cors',
+        body:  JSON.stringify(data),
         headers: {
           'Content-Type': 'application/json'
         }
-    });
+    })
+    .then(res => {
+      if(res.ok) {
+        return res;
+      } else {
+        throw Error(`Request rejected with status ${res.status}`);
+      }
+    })
+    .catch(console.error)
   }
 
   // SortableEnquiry inherits the features of SortableElement from react-sortable-hoc,
