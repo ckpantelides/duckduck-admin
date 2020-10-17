@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
 import React from 'react';
-import { SortableContainer, SortableElement } from 'react-sortable-hoc';
-import arrayMove from 'array-move';
 
 import tick from './images/tick.png';
 import bin from './images/bin.png';
@@ -28,7 +26,7 @@ const Orders = () => {
         return res.json();
       })
       .then((json) => {
-        console.log(json); // The json object is here
+        //console.log(json); // The json object is here
         setData(json);
         setIsLoading(false);
       });  
@@ -69,19 +67,21 @@ const Orders = () => {
   // SortableEnquiry inherits the features of SortableElement from react-sortable-hoc,
   // allowing it to be dragged and dropped. It displays each enquiry and has 2 buttons
   // to mark as read and to delete the enquiry
-  const SortableEnquiry = SortableElement(
-    ({ value, readEnquiry, deleteEnquiry }) => (
-      // currently === "true" not true as sqlite does not accept boolean
-      // when an item is marked as "read", it will change color
-      <div className={`enquiry-card${value.read === 'true' ? ' read' : ''}`}>
-        <div className='enquiryButtonWrapper'>
-          <button className='enquiryButton' type='button' onClick={readEnquiry}>
+  function SortableEnquiry(props) {
+    const values = props.values;
+     return(
+      <div className='enquiry-card-container'>
+     { values.map((value, index) => (
+     <div key={value.rowid}
+     className={`enquiry-card${value.read === 'true' ? ' read' : ''}`}>
+              <div className='enquiryButtonWrapper'>
+          <button className='enquiryButton' type='button' onClick={()=>readEnquiry(value.rowid)}>
             <img src={tick}  className='buttonIcon' alt='tick' />
           </button>
           <button
             className='enquiryButton'
             type='button'
-            onClick={deleteEnquiry}
+            onClick={()=>deleteEnquiry(value.rowid)}
           >
             <img src={bin} className='buttonIcon' alt='bin' />
           </button>
@@ -106,36 +106,17 @@ const Orders = () => {
         <p>{value.paymentintentid}</p>
         <p> Card: {value.brand} {value.last4}</p>
       </div>
-    )
-  );
-
-  // SortableEnquiryContainer will hold the SortableEnquiries, allowing them to
-  // be dragged and dropped. It will map the enquiry data and pass it to each
-  // SortableEnqiury element
-  const SortableEnquiryContainer = SortableContainer(({ items }) => (
-    <div className='enquiry-card-container'>
-      {items.map((value, index) => (
-        <SortableEnquiry
-          key={value.rowid}
-          index={index}
-          value={value}
-          readEnquiry={() => readEnquiry(value.rowid)}
-          deleteEnquiry={() => deleteEnquiry(value.rowid)}
-        />
-      ))}
+      )
+    ) }
     </div>
-  ));
-      
-  // data elements will be updated with a new index once they've been moved
-  // this function will be passed to the SortableEnquiryContainer below
-  const onSortEnd = ({ oldIndex, newIndex }) =>
-    setData(arrayMove(data, oldIndex, newIndex));
-
+     );
+  }
+  
   return (
     <div id='orders'>
       <h1>Orders</h1>
       <h4>
-        Drag orders to reorder them. Tick to mark as read. Bin to delete
+        Tick orders to mark as read. Bin to delete
       </h4>
       <button onClick={saveChanges} className='enquiry-save'>
         {' '}
@@ -143,14 +124,10 @@ const Orders = () => {
         changes
       </button>
       {isLoading ? (
-        <div className='typing_loader'></div>
+        <div className='loader'></div>
       ) : (
-        <SortableEnquiryContainer
-          axis='xy'
-          onSortEnd={onSortEnd}
-          items={data}
-          onSortStart={(_, event) => event.preventDefault()}
-          pressDelay='100'
+        <SortableEnquiry
+          values={data}
         />
       )}
     </div>
