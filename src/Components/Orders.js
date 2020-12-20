@@ -59,7 +59,7 @@ const Orders = () => {
         mode:'cors',
         body:  JSON.stringify(data),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         }
     })
     .then(res => {
@@ -98,9 +98,9 @@ const Orders = () => {
         <p className='enquiry-header'>Order ID: {value.orderid}</p>
         <hr></hr>
         <p className='enquiry-footer'>Delivery:</p>
-        <p>{value.delname}</p>
-        <p>{value.address}</p>
-        <p>{value.postcode}</p>
+        <p>{value.deliveryname}</p>
+        <p>{value.deliveryaddress}</p>
+        <p>{value.deliverypostcode}</p>
         <p>{value.email}</p>
         <hr></hr>
         <p className='enquiry-footer'>Story:</p>
@@ -113,6 +113,11 @@ const Orders = () => {
         <p>Paid: {value.paid}</p>
         <p>{value.paymentintentid}</p>
         <p> Card: {value.brand} {value.last4}</p>
+        <hr></hr>
+        <p className='enquiry-footer'>Billing:</p>
+        <p>{value.billingname}</p>
+        <p>{value.billingaddress}</p>
+        <p>{value.billingpostcode}</p>
       </div>
       )
     ) }
